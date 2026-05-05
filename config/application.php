@@ -139,6 +139,17 @@ Config::define('LOGGED_IN_SALT', env('LOGGED_IN_SALT'));
 Config::define('NONCE_SALT', env('NONCE_SALT'));
 
 /**
+ * Windows Azure Storage Configuration
+ */
+Config::define('MICROSOFT_AZURE_ACCOUNT_NAME', env('AZURE_STORAGE_ACCOUNT_NAME'));
+Config::define('MICROSOFT_AZURE_ACCOUNT_KEY', env('AZURE_STORAGE_ACCOUNT_KEY'));
+Config::define('MICROSOFT_AZURE_CONTAINER', env('AZURE_STORAGE_CONTAINER'));
+if (env('AZURE_STORAGE_CNAME')) {
+    Config::define('MICROSOFT_AZURE_CNAME', env('AZURE_STORAGE_CNAME'));
+}
+Config::define('MICROSOFT_AZURE_USE_FOR_DEFAULT_UPLOAD', true);
+
+/**
  * Custom Settings
  */
 Config::define('AUTOMATIC_UPDATER_DISABLED', true);
