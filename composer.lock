@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c03dfd1d5f86f478a20a276671c842e2",
+    "content-hash": "9680e3a5873d937704acaa064a4a46ab",
     "packages": [
         {
             "name": "composer/installers",
@@ -1049,6 +1049,24 @@
                 "source": "https://themes.svn.wordpress.org/twentytwentyfive"
             },
             "time": "2025-12-03T00:00:00+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/windows-azure-storage",
+            "version": "4.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/windows-azure-storage/",
+                "reference": "tags/4.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/windows-azure-storage.4.5.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/windows-azure-storage/"
         }
     ],
     "packages-dev": [
